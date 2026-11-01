@@ -1,11 +1,46 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<module type="JAVA_MODULE" version="4">
-  <component name="NewModuleRootManager" inherit-compiler-output="true">
-    <exclude-output />
-    <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
-    </content>
-    <orderEntry type="inheritedJdk" />
-    <orderEntry type="sourceFolder" forTests="false" />
-  </component>
-</module>
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by Fernflower decompiler)
+//
+
+import java.util.LinkedList;
+
+final class Main {
+    Main() {
+    }
+
+    void main() {
+        int StrukturBaris = 10;
+        System.out.println("Soal Nomor 1");
+        System.out.println(StrukturBaris);
+        String KataBaru = "Lufty";
+        System.out.println("\n\nSoal Nomor 2");
+        System.out.println(KataBaru);
+        int[] NIM = new int[]{5, 10, 20, 7};
+        System.out.print("\nSoal 3 - NIM: ");
+
+        for(int i = 0; i < NIM.length; ++i) {
+            System.out.print(NIM[i] + " ");
+        }
+
+        System.out.println();
+        String[][] Angka = new String[][]{{"05", "3", "5"}, {"14", "19", "20"}, {"22", "27", "07"}};
+        System.out.println("\n\nSoal 4 - Angka:");
+
+        for(int baris = 0; baris < Angka.length; ++baris) {
+            for(int kolom = 0; kolom < Angka[baris].length; ++kolom) {
+                System.out.print(Angka[baris][kolom] + " ");
+            }
+
+            System.out.println();
+        }
+
+        LinkedList<Integer> listAngka = new LinkedList();
+        listAngka.push(5);
+        listAngka.push(19);
+        listAngka.push(44);
+        listAngka.push(60);
+        listAngka.push(7);
+        System.out.println("\n\nSoal 5 - listAngka: " + String.valueOf(listAngka));
+    }
+}
